@@ -1,0 +1,3 @@
+mnemonic
+bip_utils
+python-nostr
