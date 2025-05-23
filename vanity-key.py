@@ -36,15 +36,18 @@ def generate_keys(pattern):
             return mnemonic, nsec, npub, attempts, elapsed_time
 
 if __name__ == "__main__":
-    # Pedir el patrón al usuario
-    pattern = input("Introduce el texto que debe tener después de 'npub1': ")
+    try:
+        # Pedir el patrón al usuario
+        pattern = input("Nombre después de 'npub1': ")
 
-    # Generar claves
-    mnemonic, nsec, npub, attempts, elapsed_time = generate_keys(pattern)
+        # Generar claves
+        mnemonic, nsec, npub, attempts, elapsed_time = generate_keys(pattern)
 
-    # Mostrar resultados
-    print(f"\nFrase mnemónica: {mnemonic}")
-    print(f"Clave privada (nsec): {nsec}")
-    print(f"Clave pública (npub): {npub}")
-    print(f"Intentos: {attempts}")
-    print(f"Tiempo total: {elapsed_time:.2f} segundos")
+        # Mostrar resultados
+        print(f"\nFrase mnemónica: {mnemonic}\n")
+        print(f"Clave privada (nsec): {nsec}\n")
+        print(f"Clave pública (npub): {npub}\n")
+        print(f"Intentos: {attempts}")
+        print(f"Tiempo total: {elapsed_time:.2f} segundos")
+    except KeyboardInterrupt:
+        print("\n\nBúsqueda interrumpida.")
