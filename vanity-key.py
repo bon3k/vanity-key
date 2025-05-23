@@ -37,7 +37,7 @@ def generate_keys(pattern):
 
 if __name__ == "__main__":
     # Pedir el patrón al usuario
-    pattern = input("Introduce el texto que debe tener la npub después del 'npub1': ")
+    pattern = input("Introduce el texto que debe tener después de 'npub1': ")
 
     # Generar claves
     mnemonic, nsec, npub, attempts, elapsed_time = generate_keys(pattern)
