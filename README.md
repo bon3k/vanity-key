@@ -1,27 +1,20 @@
 # Vanity Key Generator (CLI)
 
-Este es un generador de claves para Nostr en línea de comandos. Genera claves públicas (`npub`) que comiencen con un patrón personalizado.
+Command-line tool for generating Nostr keys. It creates public keys (`npub`) that start with a custom pattern.
 
-## Características
+## Requirements
 
-- Genera frases mnemónicas BIP-39 de 12 palabras.
-- Deriva claves privadas y públicas compatibles con Nostr.
-- Permite buscar claves públicas que comiencen con un texto específico (vanity keys).
-- Muestra el número de intentos y el tiempo total de búsqueda.
+- Python 3.8 or higher
 
-## Requisitos
+## Installation
 
-- Python 3.8 o superior
-
-## Instalación
-
-Clona este repositorio y entra en la carpeta del proyecto:
+Clone this repository and navigate into the project folder:
 
 ```bash
 git clone https://github.com/bon3k/vanity-key.git
 cd vanity-key
 ```
-Crea un entorno virtual e instala las dependencias:
+Create a virtual environment and install the dependencies:
 
 ```bash
 python3 -m venv venv
@@ -30,7 +23,7 @@ pip install -r requirements.txt
 ```
 ## Uso
 
-Ejecuta el script desde la terminal:
+Run the script:
 
 ```bash
 python3 vanity-key.py
